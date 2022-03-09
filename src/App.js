@@ -6,8 +6,8 @@ import Glasses from "./Component/Glasses/Glasses";
 function App() {
   return (
     <div className="App">
-      {/* <BookingMovieTicket /> */}
-      <Glasses />
+      <BookingMovieTicket />
+      {/* <Glasses /> */}
     </div>
   );
 }

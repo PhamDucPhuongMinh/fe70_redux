@@ -4,8 +4,10 @@ import style from "./TableTicket.module.css";
 
 class TableTicket extends Component {
   render() {
+    let totalPrice = 0;
     const renderTicket = () => {
       return this.props.danhSachGheDangDat.map((item) => {
+        totalPrice += item.gia;
         return (
           <tr key={item.soGhe}>
             <td className={`${style["text-yellow"]}`}>{item.soGhe}</td>
@@ -23,6 +25,16 @@ class TableTicket extends Component {
           </tr>
         );
       });
+    };
+
+    const renderTotalPrice = () => {
+      return (
+        <tr>
+          <td className={`${style["text-yellow"]}`}>Tổng giá vé</td>
+          <td className={`${style["text-yellow"]}`}>{totalPrice}</td>
+          <td></td>
+        </tr>
+      );
     };
     return (
       <React.Fragment>
@@ -47,7 +59,10 @@ class TableTicket extends Component {
                 <th></th>
               </tr>
             </thead>
-            <tbody>{renderTicket()}</tbody>
+            <tbody>
+              {renderTicket()}
+              {renderTotalPrice()}
+            </tbody>
           </table>
         </div>
       </React.Fragment>
