@@ -1,0 +1,41 @@
+.text-yellow {
+  color: yellow;
+}
+
+.table-ticket {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.seat {
+  font-size: 20px;
+  position: relative;
+  text-align: left;
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+
+.seat::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 30px;
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.seat-orange::before {
+  background-color: #ffc760;
+}
+
+.seat-green::before {
+  background-color: #73e973;
+}
+
+.seat-white::before {
+  background-color: white;
+  border: #ffc760 solid 2px;
+}

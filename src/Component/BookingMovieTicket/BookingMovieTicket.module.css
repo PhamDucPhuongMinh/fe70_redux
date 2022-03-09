@@ -1,0 +1,38 @@
+@font-face {
+  font-family: fontMovie;
+  src: url(../../font/Pony.ttf);
+}
+
+.font-movie {
+  font-family: fontMovie;
+}
+
+.container-booking {
+  background: url("../../../public/image/bgmovie.jpg");
+  background-size: cover;
+}
+
+.container-content {
+  min-width: 100vw;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.5);
+  padding: 20px;
+}
+
+.title-cinema {
+  color: yellow;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  height: 30px;
+  width: 600px;
+  background-color: orange;
+  -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}

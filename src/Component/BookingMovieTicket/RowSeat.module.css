@@ -1,0 +1,46 @@
+.row-seat {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.row-seat__name {
+  display: inline-block;
+  width: 20px;
+  margin-right: 20px;
+  color: yellow;
+  font-size: 20px;
+}
+
+.number-seat {
+  width: 50px;
+  height: 32px;
+  font-size: 20px;
+  color: yellow;
+  border: none;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.seat {
+  width: 50px;
+  height: 32px;
+  color: #333;
+  border: 2px solid #ffc760;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.seat:hover {
+  opacity: 0.8;
+}
+
+.seat--ordered {
+  background-color: #ffc760;
+  opacity: 1 !important;
+}
+
+.seat--ordering {
+  background-color: #73e973;
+  border: 2px solid #73e973;
+}

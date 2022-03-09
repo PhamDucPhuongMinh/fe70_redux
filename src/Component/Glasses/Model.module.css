@@ -1,0 +1,12 @@
+.model {
+  width: 300px;
+  margin: 10px 0;
+}
+
+.model-glasses {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
